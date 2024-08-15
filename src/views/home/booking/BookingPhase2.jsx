@@ -118,9 +118,9 @@ function BookingPhase2({booking, setBooking ,setTriger, triger}) {
                                 <div className="mmy">
                                     <div className="seaats-container d-flex justify-content-center align-items-center">
                                         
-                                        <div id="col">
-                                            {screen.rows && screen.rows.map((row, index) => (<div className="my_row" key={index}>   
-                                                <div className="row_letter">{row.letter}</div> 
+                                        <div id="col" className='seats-scroll'>
+                                            {screen.rows && screen.rows.map((row, index) => (<div className="my_row " key={index}>   
+                                                <div className="seat_letter">{row.letter}</div> 
                                                     {row.seats && row.seats.map((seat, index) => (
                                                     <div key={index}>
                                                         <Seat 
@@ -132,7 +132,7 @@ function BookingPhase2({booking, setBooking ,setTriger, triger}) {
                                                     </div>
                                                         
                                                     ))}
-                                                <div className="row_letter">{row.letter}</div>
+                                                <div className="seat_letter">{row.letter}</div>
                                             </div>))}
                                         </div>
                                     </div>

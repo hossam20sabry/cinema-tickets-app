@@ -65,7 +65,7 @@ function Home(){
                         <div className="carousel-inner">
                             {movies.map((movie, index) => (
                                 <div className={"carousel-item "+(index==0?"active":"")} key={movie.id}>
-                                    <img src={'http://127.0.0.1:8000/photos/'+movie.photo_url} className="carousel-img" alt="..."/>
+                                    <img src={import.meta.env.VITE_IMG_BASE_URL+'/photos/'+movie.photo_url} className="carousel-img" alt="..."/>
                                     <div className="carousel-caption">
                                         <h5 className="text-common text-uppercase">{movie.name}</h5>
                                         <p className="text-capitalize">{movie.director} - {movie.duration} - {movie.rating}/10 - categoty:  {movie.category.title}</p>

@@ -34,7 +34,7 @@ function TheaterShow() {
             {!loading && 
             <div>
                 <div className="theater-show">
-                    <img src={'http://127.0.0.1:8000/cinema_photos/'+theater.img} alt="" />
+                    <img src={import.meta.env.VITE_IMG_BASE_URL+'/cinema_photos/'+theater.img} alt="" />
                     <div className="content">
                         <div className="bg-main3 justify-content-between align-items-center flex-column p-3">
                             <h2 className="text-center text-uppercase">{theater.name} Cinemas</h2>

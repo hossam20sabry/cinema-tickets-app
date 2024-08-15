@@ -356,9 +356,14 @@ main{
       height: calc(70vh - 56px);
   }
 }
-
+h3{
+  text-wrap: pretty;
+}
 @media only screen and (max-width: 768px) {
   .table_responsive{
       display: none;
   }
+  .h3, h3 {
+    font-size: calc(1rem + .6vw) !important;
+}
 }

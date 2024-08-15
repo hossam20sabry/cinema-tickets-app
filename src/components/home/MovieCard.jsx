@@ -15,7 +15,7 @@ function MovieCard({id, name, poster_url, index=null, top10 = null}) {
     return (
         <div className="d-flex align-items-center justify-content-center" key={id}>
             <div className="movie-card">
-                <img src={'http://127.0.0.1:8000/posters/'+poster_url} alt=""/>
+                <img src={import.meta.env.VITE_IMG_BASE_URL+'/posters/'+poster_url} alt=""/>
                 <div className="movie-card-content pt-5">
                     {top10 ? <h3>{index+1}</h3> : null}
                     <h3 className="pt-5 text-capitalize">{name}</h3>

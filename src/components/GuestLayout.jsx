@@ -31,36 +31,20 @@ function GuestLayout(){
                     <img src={menu}></img>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Theaters</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Top 10 Movies</a>
-                        </li>
+                    <div>
                         
-                        
-                    </ul>
+                    </div>
                     <div class="d-flex">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2 search-input" type="search" placeholder="Search movies or theaters" aria-label="Search"/>
-                            <button class="btn btn-primary btn-bg-2 search-btn" type="submit">
-                                <img src={search} class="btn-logo" alt=""/>
-                            </button>
-                        </form>
+                        
                         <Link to={'/login'} class="btn btn-primary bg-black border-none mx-2">Login</Link>
                         <Link to={'/register'} class="btn btn-primary btn-bg-2  border-none">Register</Link>
                     </div>
                 </div>
             </div>
         </nav>
+        <div className="min-h-100">
             <Outlet></Outlet>
+        </div>
         <footer class="bg-main2 mt-5">
             <div class="container">
                 <div class="row row-cols-2 row-cols-md-2">
@@ -71,15 +55,7 @@ function GuestLayout(){
                     <div class="col py-5 d-flex justify-content-end align-items-center flex-column">
                         <h5 class="text-uppercase">Quick Links</h5>
                         <ul class="">
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase" href="#">Movies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase" href="#">Theaters</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase" href="#">Top 10 Movies</a>
-                            </li>
+                            
                             <li class="nav-item">
                                 <Link to={'/register'} class="nav-link text-uppercase">Signup</Link>
                             </li>

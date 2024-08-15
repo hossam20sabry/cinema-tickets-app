@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         [
             {
                 path: '/',
-                element: <GuestPage />
+                element: <Navigate to="/login"></Navigate>
             },
             {
                 path: '/register',

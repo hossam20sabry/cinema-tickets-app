@@ -42,6 +42,7 @@ function BookingPhase3({booking, setBooking, setTriger}) {
             }})
         .then(({data}) => {
             window.location.href = data.url
+            setSubmitLoading(false)
         })
         .catch(({err}) => {
             setSubmitLoading(false)
@@ -149,7 +150,7 @@ function BookingPhase3({booking, setBooking, setTriger}) {
                         </table>
                     </div>
                     <div className="col-12 d-flex justify-content-between">
-                        <div className="d-flex">
+                        <div className="d-flex flex-wrap">
                             <button type="button" onClick={() => setTriger({phase1: false, phase2: true, phase3: false})} className="btn btn-primary d-flex align-items-center ">
                                 <img src={leftArrow} className="left-arrow" alt=""/>
                                 Previous

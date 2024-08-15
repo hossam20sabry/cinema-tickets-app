@@ -127,7 +127,9 @@ function AppLayout(){
                 </div>
             </nav>
 
-            <Outlet></Outlet>
+            <div className="min-h-100">
+                <Outlet></Outlet>
+            </div>
 
             <footer className="bg-main2 mt-5">
                 <div className="container">

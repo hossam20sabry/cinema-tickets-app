@@ -6,7 +6,7 @@ function TheaterCard({id, img, name}) {
     return (
         <div className="d-flex align-items-center justify-content-center">
             <div className="movie-card2">
-                <img src={'http://127.0.0.1:8000/cinema_photos/'+img} alt=""/>
+                <img src={import.meta.env.VITE_IMG_BASE_URL+'/cinema_photos/'+img} alt=""/>
                 <div className="movie-card-content pt-5">
                     <h3 className="pt-5 text-capitalize">{name}</h3>
                     <Link to={`/home/theater/${id}`} className="btn btn-primary btn-bg-3">

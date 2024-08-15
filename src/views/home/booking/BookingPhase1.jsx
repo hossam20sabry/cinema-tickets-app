@@ -137,7 +137,7 @@ function BookingPhase1({booking, movie, theaters, setTriger}) {
     return (
         <div className="row mt-3">
             <div className="col-12 col-sm-6 col-md-4 my-3 ">
-                <img src={'http://127.0.0.1:8000/posters/'+movie.poster_url} className="img-fluid" alt="..." />
+                <img src={import.meta.env.VITE_IMG_BASE_URL+'/posters/'+movie.poster_url} className="img-fluid" alt="..." />
             </div>
             <div className="col-12 col-sm-6 col-md-4 my-3">
                 <form className="row g-3" onSubmit={onSubmit}>
